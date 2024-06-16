@@ -1,4 +1,4 @@
-# Purpose of thie Repository:
+# Purpose of this Repository:
 This repository is used to track configuration files for my home automation projects.
 
 Leverages CML running on a Proxmox server
