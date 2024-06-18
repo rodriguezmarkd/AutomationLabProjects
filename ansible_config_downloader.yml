@@ -1,0 +1,12 @@
+---
+- name: "Play 1: Capture and store config"
+  hosts: "10.32.1.212"
+  connection: network_cli
+  tasks:
+    - name: "Task 1: Get configs"
+      ios_command:
+        commands: "show running-config"
+      register: cli_result
+    - name: "Task 2: Print config"
+      debug:
+        msg: "{{ cli_result }}"
